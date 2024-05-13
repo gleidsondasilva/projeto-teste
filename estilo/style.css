@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sedan+SC&display=swap');
+
+@font-face {
+    font-family: 'tr';
+    src: url('../fonts/Adorable\ Handmade.ttf') format('truetype');
+}
+
+:root {
+    --cor0: #00FA5F;
+    --cor1: #BA362F;
+    --cor2: #FA0B00;
+    --cor3: #44A669;
+    --cor4: #7A5250;
+}
+
+body {
+    background-color: lightgray;
+    font-family: "Sedan SC", serif;
+
+}
+
+a.externo::after {
+    content: ' \1f517';
+}
+
+header {
+    background-image: linear-gradient(-45deg, var(--cor4)50%, var(--cor0));
+    text-align: center;
+    min-height: 150px;   
+    padding: 40px;
+}
+
+header > h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-align: 2px 2px opx rgba(0, 0, 0, 0.308);
+    font-weight: normal;
+
+   
+    
+}
+
+header > p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+
+nav {
+  background-color: var(--cor3);
+  padding: 10px;
+  text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.199);
+
+}
+
+nav > a {
+    color: var(--cor1);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav a:hover {
+    background-color: var(--cor1);
+    color: white;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+} 
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 450px;
+    display: block;
+    margin: auto;
+}
+
+main h1 
+{
+    font-family: 'tr';
+    font-size: 2.5em;
+    font-weight: normal;
+    color: var(--cor1);
+}
+
+main h2 {
+    font-family: 'tr';
+    color: white;
+    font-size: 1.8em;
+    background-image: linear-gradient(to right,var(--cor1), transparent);
+    text-indent: 8px;
+    font-weight: normal;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent:  30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main strong {
+    color: var(--cor1);
+    font-size: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor3);
+    background-color: wheat;
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+aside {
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.288);
+}
+aside > ul {
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
+}
+
+aside > h3 {
+    background-color: red;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+div.video {
+   background-color: #2e4d3a;
+   padding: 20px;
+   margin: 5px -20px 30px;
+   padding-bottom: 57%;
+   position: relative;
+}
+
+div.video > iframe {
+   position: absolute;
+   top: 5%;
+   left: 5%;
+   width: 90%;
+   height: 90%;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer > p > a {
+   color: white; 
+   text-decoration: none;
+   font-weight: bold;
+   
+} 
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor0);
+}
